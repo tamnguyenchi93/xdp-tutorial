@@ -129,6 +129,9 @@ struct bpf_object *load_bpf_object_file(const char *filename, int ifindex)
 	return obj;
 }
 
+/*
+TODO: Why this function is checking to much
+*/
 static struct bpf_object *open_bpf_object(const char *file, int ifindex)
 {
 	int err;
